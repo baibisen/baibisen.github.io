@@ -94,20 +94,18 @@
 
 
 
-  <meta name="description" content="TCP总结TCP服务端和客户端建立起可靠连接进行传输数据，三次握手建立起连接，四次挥手释放链接，期间通过流量控制来处理传输速度，拥塞控制来处理传输拥堵等TCP的可靠性主要体现在 确认应答，超时重传，流量控制，拥塞控制，以及乱序处理等   长连接：TCP长连接，即通过三次握手，正常传输数据，等待客户端完成数据传输，且无数据需要传送是手动关闭连接，即完成一次连接   短连接：TCP短连接，即三次握手建">
+  <meta name="description" content="Mac系统下nodejs安装brew安装node12345678910111213# 搜索可安装node版本brew search node# 安装指定版本nodebrew install node@12# 链接nodebrew link node@12 --force# 配置环境变量echo export PATH=&quot;/usr/local/opt/node@12/bin:$PATH&quot; &amp;gt;&amp;">
 <meta name="keywords" content="baibisen">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TCP总结">
-<meta property="og:url" content="https://baibisen.github.io/2019/07/12/tcp总结/index.html">
+<meta property="og:title" content="nodejs安装卸载以及hexo踩坑">
+<meta property="og:url" content="https://baibisen.github.io/2021/01/21/nodejs安装卸载以及hexo踩坑/index.html">
 <meta property="og:site_name" content="baibisen的主页">
-<meta property="og:description" content="TCP总结TCP服务端和客户端建立起可靠连接进行传输数据，三次握手建立起连接，四次挥手释放链接，期间通过流量控制来处理传输速度，拥塞控制来处理传输拥堵等TCP的可靠性主要体现在 确认应答，超时重传，流量控制，拥塞控制，以及乱序处理等   长连接：TCP长连接，即通过三次握手，正常传输数据，等待客户端完成数据传输，且无数据需要传送是手动关闭连接，即完成一次连接   短连接：TCP短连接，即三次握手建">
+<meta property="og:description" content="Mac系统下nodejs安装brew安装node12345678910111213# 搜索可安装node版本brew search node# 安装指定版本nodebrew install node@12# 链接nodebrew link node@12 --force# 配置环境变量echo export PATH=&quot;/usr/local/opt/node@12/bin:$PATH&quot; &amp;gt;&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://baibisen.github.io/images/tcp.png">
-<meta property="og:updated_time" content="2021-01-21T06:30:09.022Z">
+<meta property="og:updated_time" content="2021-01-21T09:48:22.484Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TCP总结">
-<meta name="twitter:description" content="TCP总结TCP服务端和客户端建立起可靠连接进行传输数据，三次握手建立起连接，四次挥手释放链接，期间通过流量控制来处理传输速度，拥塞控制来处理传输拥堵等TCP的可靠性主要体现在 确认应答，超时重传，流量控制，拥塞控制，以及乱序处理等   长连接：TCP长连接，即通过三次握手，正常传输数据，等待客户端完成数据传输，且无数据需要传送是手动关闭连接，即完成一次连接   短连接：TCP短连接，即三次握手建">
-<meta name="twitter:image" content="https://baibisen.github.io/images/tcp.png">
+<meta name="twitter:title" content="nodejs安装卸载以及hexo踩坑">
+<meta name="twitter:description" content="Mac系统下nodejs安装brew安装node12345678910111213# 搜索可安装node版本brew search node# 安装指定版本nodebrew install node@12# 链接nodebrew link node@12 --force# 配置环境变量echo export PATH=&quot;/usr/local/opt/node@12/bin:$PATH&quot; &amp;gt;&amp;">
 
 
 
@@ -115,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="https://baibisen.github.io/2019/07/12/tcp总结/">
+  <link rel="canonical" href="https://baibisen.github.io/2021/01/21/nodejs安装卸载以及hexo踩坑/">
 
 
 
@@ -125,7 +123,7 @@
   };
 </script>
 
-  <title>TCP总结 | baibisen的主页</title>
+  <title>nodejs安装卸载以及hexo踩坑 | baibisen的主页</title>
   
 
 
@@ -324,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://baibisen.github.io/2019/07/12/tcp总结/">
+    <link itemprop="mainEntityOfPage" href="https://baibisen.github.io/2021/01/21/nodejs安装卸载以及hexo踩坑/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="baibisen">
@@ -341,7 +339,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">TCP总结
+          <h1 class="post-title" itemprop="name headline">nodejs安装卸载以及hexo踩坑
 
               
             
@@ -367,46 +365,16 @@
                 
               
 
-              <time title="创建时间：2019-07-12 15:14:14" itemprop="dateCreated datePublished" datetime="2019-07-12T15:14:14+08:00">2019-07-12</time>
+              <time title="创建时间：2021-01-21 17:19:50 / 修改时间：17:48:22" itemprop="dateCreated datePublished" datetime="2021-01-21T17:19:50+08:00">2021-01-21</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2021-01-21 14:30:09" itemprop="dateModified" datetime="2021-01-21T14:30:09+08:00">2021-01-21</time>
               
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/网络基础/" itemprop="url" rel="index"><span itemprop="name">网络基础</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -436,19 +404,18 @@
       
 
       
-        <h3 id="TCP总结"><a href="#TCP总结" class="headerlink" title="TCP总结"></a>TCP总结</h3><p>TCP服务端和客户端建立起可靠连接进行传输数据，三次握手建立起连接，四次挥手释放链接，期间通过流量控制来处理传输速度，拥塞控制来处理传输拥堵等<br>TCP的可靠性主要体现在 <strong>确认应答</strong>，<strong>超时重传</strong>，<strong>流量控制</strong>，<strong>拥塞控制</strong>，以及<strong>乱序处理</strong>等  </p>
-<h3 id="长连接："><a href="#长连接：" class="headerlink" title="长连接："></a>长连接：</h3><p>TCP长连接，即通过三次握手，正常传输数据，等待客户端完成数据传输，且无数据需要传送是手动关闭连接，即完成一次连接  </p>
-<h3 id="短连接："><a href="#短连接：" class="headerlink" title="短连接："></a>短连接：</h3><p>TCP短连接，即三次握手建立连接，传输数据，四次回收自动释放连接，这个过程都是一次请求，不需要用户手动释放，即HTTP请求就是基于TCP的短连接  </p>
-<h3 id="心跳检测："><a href="#心跳检测：" class="headerlink" title="心跳检测："></a>心跳检测：</h3><p>如果TCP建立连接后，中途异常情况，连接异常中断，这个时候服务端和客户端是无法检测到这个情况，所以引入心跳机制，服务端每隔固定时间给客户端发送简易无数据的心跳包，客户端收到心跳包后给服务端回一个确认数据，如果服务端发送心跳包，在某时间端内没有收到客户端回复，即认为连接已中断，即可回收该连接  </p>
-<h3 id="流量控制："><a href="#流量控制：" class="headerlink" title="流量控制："></a>流量控制：</h3><p>当客户端与服务端通信过程中，数据传输速率过快，服务端接收来不及，导致丢失数据，解决办法就是通过TCP的滑动窗口，通过接收端的滑动窗口接收大小来控制每次发送端发送的数据大小。  </p>
-<h3 id="滑动窗口：见图中窗口部分"><a href="#滑动窗口：见图中窗口部分" class="headerlink" title="滑动窗口：见图中窗口部分"></a>滑动窗口：见图中窗口部分</h3><p>当发送端和接收端建立起连接后，接收端会通过数据头告知发送端能接收的最大字节数，以及告知发送端下一次请求的数据应该从第几个字节开始，如果超过接收端的范围，接收端仍会发送之前的确认号，告知发送端应该发送的号，发送端重新计算后进行发送  </p>
-<h3 id="拥塞控制："><a href="#拥塞控制：" class="headerlink" title="拥塞控制："></a>拥塞控制：</h3><h3 id="确认应答："><a href="#确认应答：" class="headerlink" title="确认应答："></a>确认应答：</h3><p>TCP实现可靠性主要通过确认应答机制，当发送方发送数据给接收方，接收方确认收到数据后会给发送方回一个确认的空数据包，确认数据已收到  </p>
-<h3 id="超时重传："><a href="#超时重传：" class="headerlink" title="超时重传："></a>超时重传：</h3><p>当发送方给接收方发送数据包时，即计数器就开始记录发送时间，如果到时间未收到接收方发来的确认信息，就重新发送该数据包，直到收到接收方发来的确认信息。  </p>
-<h3 id="重复丢弃："><a href="#重复丢弃：" class="headerlink" title="重复丢弃："></a>重复丢弃：</h3><p>如果接收方收到许多超时数据包时，这时候接收方会对首部进行校验，通过每个数据包头的序号来判断是否是重复包，然后丢弃  </p>
-<h3 id="乱序处理："><a href="#乱序处理：" class="headerlink" title="乱序处理："></a>乱序处理：</h3><p>如果因为超时重传造成一些数据包乱序，这种情况接收方会对首部进行校验，通过数据包头的序号对数据包进行排序  </p>
-<h3 id="吞吐量计算："><a href="#吞吐量计算：" class="headerlink" title="吞吐量计算："></a>吞吐量计算：</h3><p>T=W/RTT  即W为窗口大小（单位 比特），RTT往返时间（单位 秒）  </p>
-<h3 id="带宽和吞吐量的区别："><a href="#带宽和吞吐量的区别：" class="headerlink" title="带宽和吞吐量的区别："></a>带宽和吞吐量的区别：</h3><p>带宽：单位时间内所能传输的比特数 Mbps<br>吞吐量：单位时间内成功传输的比特数Mbps，吞吐量会受多方面影响，所以用于实际测试性能  </p>
-<p><img src="/images/tcp.png" alt="avatar"></p>
+        <h1 id="Mac系统下nodejs安装"><a href="#Mac系统下nodejs安装" class="headerlink" title="Mac系统下nodejs安装"></a>Mac系统下nodejs安装</h1><h3 id="brew安装node"><a href="#brew安装node" class="headerlink" title="brew安装node"></a>brew安装node</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 搜索可安装node版本</span></span><br><span class="line">brew search <span class="keyword">node</span><span class="title"></span></span><br><span class="line"><span class="title"># 安装指定版本node</span></span><br><span class="line">brew install <span class="keyword">node</span><span class="title">@12</span></span><br><span class="line"><span class="comment"># 链接node</span></span><br><span class="line">brew link <span class="keyword">node</span><span class="title">@12</span> --force</span><br><span class="line"><span class="comment"># 配置环境变量</span></span><br><span class="line">echo export <span class="attr">PATH=</span><span class="string">"/usr/local/opt/node@12/bin:$PATH"</span> &gt;&gt; /Users/baibisen/.bash_profile</span><br><span class="line"><span class="comment"># 重启bash_profile生效</span></span><br><span class="line">source /Users/baibisen/.bash_profile</span><br><span class="line"><span class="comment"># 查看node版本</span></span><br><span class="line"><span class="keyword">node</span> <span class="title">-v</span></span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="brew卸载node"><a href="#brew卸载node" class="headerlink" title="brew卸载node"></a>brew卸载node</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 直接卸载node</span></span><br><span class="line">brew uninstall <span class="keyword">node</span><span class="title">@12</span> --force</span><br><span class="line"><span class="comment"># 清除残留文件</span></span><br><span class="line">brew doctor</span><br><span class="line">brew cleanup</span><br></pre></td></tr></table></figure>
+
+<h1 id="Mac系统下hexo安装与踩坑"><a href="#Mac系统下hexo安装与踩坑" class="headerlink" title="Mac系统下hexo安装与踩坑"></a>Mac系统下hexo安装与踩坑</h1><h3 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装好node后安装hexo客户端</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="comment"># 查看hexo版本</span></span><br><span class="line">hexo -v</span><br><span class="line"><span class="comment"># 安装好hexo初始化(如果是新文件夹)</span></span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line"><span class="comment"># 进入hexo目录安装node相关包(重要！)</span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># hexo基础命令</span></span><br><span class="line">hexo new <span class="string">"test"</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="hexo卸载"><a href="#hexo卸载" class="headerlink" title="hexo卸载"></a>hexo卸载</h3><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 卸载hexo</span></span><br><span class="line">npm uninstall hexo-cli -g</span><br><span class="line"><span class="meta"># npm查看安装目录是否有hexo残留</span></span><br><span class="line">npm list -g</span><br><span class="line"><span class="meta"># 查看本地是否有hexo残留</span></span><br><span class="line">which hexo</span><br></pre></td></tr></table></figure>
+
+<h3 id="hexo问题解决"><a href="#hexo问题解决" class="headerlink" title="hexo问题解决"></a>hexo问题解决</h3><p>安装好hexo执行deploy命令时报错，当时我的node版本是node@15</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be integer. Received an instance of Object</span><br><span class="line">    at copyFile (fs.js:1972:10)</span><br><span class="line">    at tryCatcher (/Users/baibisen/Workspace/hexo/github_page_source/node_modules/bluebird/js/<span class="keyword">release</span>/util.js:<span class="number">16</span>:<span class="number">23</span>)</span><br><span class="line">    <span class="keyword">at</span> ret (eval <span class="keyword">at</span> makeNodePromisifiedEval (/usr/<span class="keyword">local</span>/lib/node_modules/hexo-cli/node_modules/bluebird/js/<span class="keyword">release</span>/promisify.js:<span class="number">184</span>:<span class="number">12</span>), &lt;anonymous&gt;:<span class="number">13</span>:<span class="number">39</span>)</span><br><span class="line">    <span class="keyword">at</span> /<span class="keyword">Users</span>/baibisen/Workspace/hexo/github_page_source/node_modules/hexo-fs/lib/fs.js:<span class="number">144</span>:<span class="number">39</span></span><br><span class="line">    <span class="keyword">at</span> tryCatcher (/<span class="keyword">Users</span>/baibisen/Workspace/hexo/github_page_source/node_modules/bluebird/js/<span class="keyword">release</span>/util.js:<span class="number">16</span>:<span class="number">23</span>)</span><br><span class="line">    <span class="keyword">at</span> Promise._settlePromiseFromHandler (/<span class="keyword">Users</span>/baibisen/Workspace/hexo/github_page_source/node_modules/bluebird/js/<span class="keyword">release</span>/promise.js:<span class="number">517</span>:<span class="number">31</span>)</span><br><span class="line"> ......</span><br></pre></td></tr></table></figure>
+
+<p>查资料了解到可能是hexo的版本不支持过高的node版本<br>于是我把node版本降低到了node@14，重新deploy发现还是这个问题，最后降到node@12之后重新deploy发现不报错正常了。<br>所以适配hexo建议node版本设置为node@12，待hexo官方修复这种兼容性bug</p>
 
       
     </div>
@@ -479,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/02/hadoop批量杀死job/" rel="next" title="hadoop批量杀死job">
-                <i class="fa fa-chevron-left"></i> hadoop批量杀死job
+              <a href="/2021/01/21/markdown语法参考手册/" rel="next" title="markdown语法参考手册">
+                <i class="fa fa-chevron-left"></i> markdown语法参考手册
               </a>
             
           </div>
@@ -488,10 +455,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/14/object类/" rel="prev" title="object类">
-                object类 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -633,7 +596,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP总结"><span class="nav-number">1.</span> <span class="nav-text">TCP总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#长连接："><span class="nav-number">2.</span> <span class="nav-text">长连接：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#短连接："><span class="nav-number">3.</span> <span class="nav-text">短连接：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#心跳检测："><span class="nav-number">4.</span> <span class="nav-text">心跳检测：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流量控制："><span class="nav-number">5.</span> <span class="nav-text">流量控制：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#滑动窗口：见图中窗口部分"><span class="nav-number">6.</span> <span class="nav-text">滑动窗口：见图中窗口部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拥塞控制："><span class="nav-number">7.</span> <span class="nav-text">拥塞控制：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#确认应答："><span class="nav-number">8.</span> <span class="nav-text">确认应答：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超时重传："><span class="nav-number">9.</span> <span class="nav-text">超时重传：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复丢弃："><span class="nav-number">10.</span> <span class="nav-text">重复丢弃：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#乱序处理："><span class="nav-number">11.</span> <span class="nav-text">乱序处理：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#吞吐量计算："><span class="nav-number">12.</span> <span class="nav-text">吞吐量计算：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#带宽和吞吐量的区别："><span class="nav-number">13.</span> <span class="nav-text">带宽和吞吐量的区别：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac系统下nodejs安装"><span class="nav-number">1.</span> <span class="nav-text">Mac系统下nodejs安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#brew安装node"><span class="nav-number">1.0.1.</span> <span class="nav-text">brew安装node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#brew卸载node"><span class="nav-number">1.0.2.</span> <span class="nav-text">brew卸载node</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac系统下hexo安装与踩坑"><span class="nav-number">2.</span> <span class="nav-text">Mac系统下hexo安装与踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo安装"><span class="nav-number">2.0.1.</span> <span class="nav-text">hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo卸载"><span class="nav-number">2.0.2.</span> <span class="nav-text">hexo卸载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo问题解决"><span class="nav-number">2.0.3.</span> <span class="nav-text">hexo问题解决</span></a></li></ol></li></div>
             
 
           </div>
