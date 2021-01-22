@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="白碧森的主页">
 <meta property="og:description" content="Mac系统下nodejs安装brew安装node12345678910111213# 搜索可安装node版本brew search node# 安装指定版本nodebrew install node@12# 链接nodebrew link node@12 --force# 配置环境变量echo export PATH=&quot;/usr/local/opt/node@12/bin:$PATH&quot; &amp;gt;&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2021-01-21T10:10:13.977Z">
+<meta property="og:updated_time" content="2021-01-22T07:37:22.587Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nodejs安装卸载以及hexo踩坑">
 <meta name="twitter:description" content="Mac系统下nodejs安装brew安装node12345678910111213# 搜索可安装node版本brew search node# 安装指定版本nodebrew install node@12# 链接nodebrew link node@12 --force# 配置环境变量echo export PATH=&quot;/usr/local/opt/node@12/bin:$PATH&quot; &amp;gt;&amp;">
@@ -365,12 +365,24 @@
                 
               
 
-              <time title="创建时间：2021-01-21 17:19:50 / 修改时间：18:10:13" itemprop="dateCreated datePublished" datetime="2021-01-21T17:19:50+08:00">2021-01-21</time>
+              <time title="创建时间：2021-01-21 17:19:50" itemprop="dateCreated datePublished" datetime="2021-01-21T17:19:50+08:00">2021-01-21</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-01-22 15:37:22" itemprop="dateModified" datetime="2021-01-22T15:37:22+08:00">2021-01-22</time>
               
             
           </span>
@@ -433,7 +445,7 @@
 <h3 id="hexo问题解决"><a href="#hexo问题解决" class="headerlink" title="hexo问题解决"></a>hexo问题解决</h3><p>安装好hexo执行deploy命令时报错，当时我的node版本是node@15</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be integer. Received an instance of Object</span><br><span class="line">    at copyFile (fs.js:1972:10)</span><br><span class="line">    at tryCatcher (/Users/baibisen/Workspace/hexo/github_page_source/node_modules/bluebird/js/<span class="keyword">release</span>/util.js:<span class="number">16</span>:<span class="number">23</span>)</span><br><span class="line">    <span class="keyword">at</span> ret (eval <span class="keyword">at</span> makeNodePromisifiedEval (/usr/<span class="keyword">local</span>/lib/node_modules/hexo-cli/node_modules/bluebird/js/<span class="keyword">release</span>/promisify.js:<span class="number">184</span>:<span class="number">12</span>), &lt;anonymous&gt;:<span class="number">13</span>:<span class="number">39</span>)</span><br><span class="line">    <span class="keyword">at</span> /<span class="keyword">Users</span>/baibisen/Workspace/hexo/github_page_source/node_modules/hexo-fs/lib/fs.js:<span class="number">144</span>:<span class="number">39</span></span><br><span class="line">    <span class="keyword">at</span> tryCatcher (/<span class="keyword">Users</span>/baibisen/Workspace/hexo/github_page_source/node_modules/bluebird/js/<span class="keyword">release</span>/util.js:<span class="number">16</span>:<span class="number">23</span>)</span><br><span class="line">    <span class="keyword">at</span> Promise._settlePromiseFromHandler (/<span class="keyword">Users</span>/baibisen/Workspace/hexo/github_page_source/node_modules/bluebird/js/<span class="keyword">release</span>/promise.js:<span class="number">517</span>:<span class="number">31</span>)</span><br><span class="line"> ......</span><br></pre></td></tr></table></figure>
 
-<p>查资料了解到可能是hexo的版本不支持过高的node版本<br>于是我把node版本降低到了node@14，重新deploy发现还是这个问题，最后降到node@12之后重新deploy发现不报错正常了。<br>所以适配hexo建议node版本设置为node@12，待hexo官方修复这种兼容性bug</p>
+<p>查资料了解到可能是hexo的版本不支持过高的node版本，于是我把node版本降低到了node@14，重新deploy发现还是这个问题，最后降到node@12之后重新deploy发现不报错正常了。所以适配hexo建议node版本设置为node@12，待hexo官方修复这种兼容性bug。</p>
 
       
     </div>
